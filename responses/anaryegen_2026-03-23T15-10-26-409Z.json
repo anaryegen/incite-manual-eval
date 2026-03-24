@@ -1,0 +1,104 @@
+{
+  "userId": "anaryegen",
+  "timestamp": "2026-03-23T15:10:26.410Z",
+  "responses": [
+    {
+      "question": "What is the role of the receptor tyrosine kinase AXL in malignancy?",
+      "citationIndex": 0,
+      "docId": "32148495",
+      "q1_support": "yes",
+      "q2_relevance": "yes"
+    },
+    {
+      "question": "What is the role of the receptor tyrosine kinase AXL in malignancy?",
+      "citationIndex": 1,
+      "docId": "27048336",
+      "q1_support": "yes",
+      "q2_relevance": "no"
+    },
+    {
+      "question": "What is the role of the receptor tyrosine kinase AXL in malignancy?",
+      "citationIndex": 2,
+      "docId": "28072762",
+      "q1_support": "yes",
+      "q2_relevance": "no"
+    },
+    {
+      "question": "Are respiratory measurements correlated with disease severity in Duchenne Muscular Dystrophy?",
+      "citationIndex": 0,
+      "docId": "23836708",
+      "q1_support": "no",
+      "q2_relevance": "no"
+    },
+    {
+      "question": "Are respiratory measurements correlated with disease severity in Duchenne Muscular Dystrophy?",
+      "citationIndex": 1,
+      "docId": "23836708",
+      "q1_support": "yes",
+      "q2_relevance": "yes"
+    },
+    {
+      "question": "Are respiratory measurements correlated with disease severity in Duchenne Muscular Dystrophy?",
+      "citationIndex": 2,
+      "docId": "23836708",
+      "q1_support": "no",
+      "q2_relevance": "yes"
+    },
+    {
+      "question": "Does the consensus molecular subtype (CMS) classification for colorectal cancer any use in routine clinical practice?",
+      "citationIndex": 0,
+      "docId": "34909395",
+      "q1_support": "yes",
+      "q2_relevance": "yes"
+    },
+    {
+      "question": "What are the lineage transcription factors of oligodendrocyte progenitor cells (OPCs)?",
+      "citationIndex": 0,
+      "docId": "19737431",
+      "q1_support": "no",
+      "q2_relevance": "no"
+    },
+    {
+      "question": "What are the lineage transcription factors of oligodendrocyte progenitor cells (OPCs)?",
+      "citationIndex": 1,
+      "docId": "20229602",
+      "q1_support": "yes",
+      "q2_relevance": "yes"
+    },
+    {
+      "question": "What are the lineage transcription factors of oligodendrocyte progenitor cells (OPCs)?",
+      "citationIndex": 2,
+      "docId": "26134954",
+      "q1_support": "yes",
+      "q2_relevance": "yes"
+    },
+    {
+      "question": "What are the lineage transcription factors of oligodendrocyte progenitor cells (OPCs)?",
+      "citationIndex": 3,
+      "docId": "24982138",
+      "q1_support": "yes",
+      "q2_relevance": "yes"
+    },
+    {
+      "question": "Is the inactivation of the X chromsome linked to cognition?",
+      "citationIndex": 0,
+      "docId": "12068376",
+      "q1_support": "no",
+      "q2_relevance": "no"
+    },
+    {
+      "question": "Is the inactivation of the X chromsome linked to cognition?",
+      "citationIndex": 1,
+      "docId": "12068376",
+      "q1_support": "no",
+      "q2_relevance": "yes"
+    },
+    {
+      "question": "Is the inactivation of the X chromsome linked to cognition?",
+      "citationIndex": 2,
+      "docId": "27870409",
+      "q1_support": "yes",
+      "q2_relevance": "yes"
+    }
+  ]
+}
