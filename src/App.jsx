@@ -274,11 +274,32 @@ export default function App() {
     }
 
     try {
-      await fetch(APPS_SCRIPT_URL, {
-        method: 'POST',
-        mode: 'no-cors',
-        body: JSON.stringify(payload),
-      })
+      // Use a hidden iframe + form to avoid CORS issues with Apps Script
+      const iframe = document.createElement('iframe')
+      iframe.name = 'submit-frame'
+      iframe.style.display = 'none'
+      document.body.appendChild(iframe)
+
+      const form = document.createElement('form')
+      form.method = 'POST'
+      form.action = APPS_SCRIPT_URL
+      form.target = 'submit-frame'
+
+      const input = document.createElement('input')
+      input.type = 'hidden'
+      input.name = 'payload'
+      input.value = JSON.stringify(payload)
+      form.appendChild(input)
+
+      document.body.appendChild(form)
+      form.submit()
+
+      // Clean up and show success after a short delay
+      setTimeout(() => {
+        document.body.removeChild(form)
+        document.body.removeChild(iframe)
+      }, 3000)
+
       setSubmitted(true)
       setSubmitError('')
     } catch (err) {
