@@ -1,6 +1,7 @@
 [
     {
         "question": "What is the role of the receptor tyrosine kinase AXL in malignancy?",
+        "source": "bioasq",
         "generated_answer": "AXL plays a significant role in malignancy by promoting various cancer-promoting processes such as proliferation, migration, invasion survival, and apoptosis [doc:32148495 snippet:\"AXL is a receptor tyrosinekinase (RTK) that has been implicated in diverse tumor-promoting processes such as proliferation, migration, invasion, survival, and apoptosis \"]. It contributes to the development of resistance to chemotherapy, as evidenced by its involvement in reducing sensitivity of tumor cells to antitumor agents [doc:27048336 snippet:\"Deregulated Axl expression and activation have been shown to be implicated in reduced sensitivity of tumor cells to target-specific and conventional antitumor agents\"]. Additionally, AXL overexpression is linked to poor prognosis in several cancers, including breast cancer, and is associated with aggressive behavior and increased tumor metastatic potential [doc:28072762 snippet:\" In the context of malignancy, evidence suggests that AXL overexpression drives wide-ranging processes, including epithelial to mesenchymal transition, tumour angiogenesis, resistance to chemotherapeutic and targeted agents, and decreased antitumor immune response.\"].",
         "citations": [
             {
@@ -21,7 +22,8 @@
     },
     {
         "question": "Are respiratory measurements correlated with disease severity in Duchenne Muscular Dystrophy?",
-        "generated_answer": "Yes, respiratory measurements such as forced vital capacity (FVC), sniff nasal inspiratory pressure (SNIP), gastric pressure during cough (Pgas cough), and diaphragmatic tension-time index (TTdi) are correlated with disease severity in Duchenne Muscular Dystrophy. For instance, FVC shows a consistent decline with age [doc:23836708 snippet:\"Absolute forced vital capacity (FVC) values peaked around the age of 13-14 years and remained mainly over 1 L but predicted values showed a mean 4.1 ± 4.4% decline/year.\"]. SNIP also demonstrates a decline with age [doc:23836708 snippet:\"Sniff nasal inspiratory pressure (SNIP) tended to increase first followed by a rapid decline (mean decrease 4.8 ± 4.9 cmH2 O; 5.2 ± 4.4% predicted/year).\"]. Pgas cough was found to be below normal in all patients and showed a mean decline of 5.7 ± 3.8 cmH2 O/year [doc:23836708 snippet:\"Gastric pressure during cough (Pgas cough) was below normal in all patients with a mean decline of 5.7 ± 3.8 cmH2 O/year.\"].",
+        "source": "bioasq",
+        "generated_answer": "Yes, respiratory measurements such as forced vital capacity (FVC), sniff nasal inspiratory pressure (SNIP), gastric pressure during cough (Pgas cough), and diaphragmatic tension-time index (TTdi) are correlated with disease severity in Duchenne Muscular Dystrophy. For instance, FVC shows a consistent decline with age [doc:23836708 snippet:\"Absolute forced vital capacity (FVC) values peaked around the age of 13-14 years and remained mainly over 1 L but predicted values showed a mean 4.1 ± 4.4% decline/year.\"]. SNIP also demonstrates a decline with age [doc:23836708 snippet:\"Sniff nasal inspiratory pressure (SNIP) tended to increase first followed by a rapid decline (mean decrease 4.8 ± 4.9 cmH2 O; 5.2 ± 4.4% predicted/year).\"]. Pgas cough was found to be below normal in all patients and showed a mean decline of 5,7 ± 3,8 cmH2 O/year [doc:23836708 snippet:\"Gastric pressure during cough (Pgas cough) was below normal in all patients with a mean decline of 5.7 ± 3.8 cmH2 O/year.\"].",
         "citations": [
             {
             "doc_id": "23836708",
@@ -42,18 +44,20 @@
     },
     {
         "question": "Does the consensus molecular subtype (CMS) classification for colorectal cancer any use in routine clinical practice?",
-        "generated_answer": "Yes, the CMS classification has shown promise for clinical application in predicting prognosis and response to systemic therapy, though it is not yet widely implemented in routine clinical practice [doc:34909395 snippet:\"Understanding CMS is a crucial step in personalized medicine, although prospective clinical trials selecting patients by CMS are required to pass proof-of-concept before becoming a routine clinical tool in oncology routine care.\"]",
+        "source": "bioasq",
+        "generated_answer": "Yes, the CMS classification has shown promise for clinical application in predicting prognosis and response to systemic therapy, though it is not yet widely implemented in routine clinical practice[doc:34909395 snippet:\"Understanding CMS is a crucial step in personalized medicine, although prospective clinical trials selecting patients by CMS are required to pass proof-of-concept before becoming a routine clinical tool in oncology routine care.\"]",
         "citations": [
             {
             "doc_id": "34909395",
-            "snippet": "The identification of several genetic mutations in colorectal cancer (CRC) has allowed a better comprehension of the prognosis and response to different antineoplastic treatments. Recently, through a systematic process, consensus molecular subtypes (CMS) have been described to characterize genetic and molecular mutations in CRC patients. Through CMS, CRC patients can be categorized into four molecular subtypes of CRC by wide transcriptional genome analysis. CMS1 has microsatellite instability and mutations in CIMP and BRAF pathways. CMS2, distinguished by mutations in specific pathways linked to cellular metabolism, also has a better prognosis. CMS3 has a KRAS mutation as a hallmark. CMS4 presents mutations in fibrogenesis pathways and mesenchymal-epithelial transition, associated with a worse prognosis. CMS classification can be a meaningful step in providing possible answers to important issues in CRC, such as the use of adjuvant chemotherapy in stage II, personalized first-line chemotherapy for metastasic CRC, and possible new target treatments that address specific pathways in each molecular subtype. Understanding CMS is a crucial step in personalized medicine, although prospective clinical trials selecting patients by CMS are required to pass proof-of-concept before becoming a routine clinical tool in oncology routine care.",
-            "full_document": ""
+            "snippet": "Understanding CMS is a crucial step in personalized medicine, although prospective clinical trials selecting patients by CMS are required to pass proof-of-concept before becoming a routine clinical tool in oncology routine care.",
+            "full_document": "The identification of several genetic mutations in colorectal cancer (CRC) has allowed a better comprehension of the prognosis and response to different antineoplastic treatments. Recently, through a systematic process, consensus molecular subtypes (CMS) have been described to characterize genetic and molecular mutations in CRC patients. Through CMS, CRC patients can be categorized into four molecular subtypes of CRC by wide transcriptional genome analysis. CMS1 has microsatellite instability and mutations in CIMP and BRAF pathways. CMS2, distinguished by mutations in specific pathways linked to cellular metabolism, also has a better prognosis. CMS3 has a KRAS mutation as a hallmark. CMS4 presents mutations in fibrogenesis pathways and mesenchymal-epithelial transition, associated with a worse prognosis. CMS classification can be a meaningful step in providing possible answers to important issues in CRC, such as the use of adjuvant chemotherapy in stage II, personalized first-line chemotherapy for metastasic CRC, and possible new target treatments that address specific pathways in each molecular subtype. Understanding CMS is a crucial step in personalized medicine, although prospective clinical trials selecting patients by CMS are required to pass proof-of-concept before becoming a routine clinical tool in oncology routine care."
             }
         ]
     },
     {
         "question": "What are the lineage transcription factors of oligodendrocyte progenitor cells (OPCs)?",
-        "generated_answer": "The lineage transcription factors of oligodendrocyte progenitor cells (OPCs) include NKX2.2 [doc:19737431 snippet:\"the Nkx2.2 transcription factor both limits the number of OPCs that are formed and subsequently promotes their differentiation\"], SOX10 [doc:20229602 snippet:\"the Sox10 transcription factor is required during the differentiation stage to promote myelin gene expression\"], and OLIG2 [doc:26134954 snippet:\"Oligodendrocyte lineage transcription factor 2-positive (OLIG2(+)) cells\"]. Additionally, ASCL1 is also mentioned in the context of inducing OPC fate [doc:24982138 snippet:\"lentiviral overexpression of transcription factors ASCL1, SOX10, and NKX2.2 in NPCs was sufficient to induce Sox10 enhancer activity, OPC mRNA, and protein expression consistent with OPC fate\"].",
+        "source": "bioasq",
+        "generated_answer": "The lineage transcription factors of oligodendrocyte progenitor cells (OPCs) include NKX2,2 [doc:19737431 snippet:\"the Nkx2.2 transcription factor both limits the number of OPCs that are formed and subsequently promotes their differentiation\"], SOX10 [doc:20229602 snippet:\"the Sox10 transcription factor is required during the differentiation stage to promote myelin gene expression\"], and OLIG2 [doc:26134954 snippet:\"Oligodendrocyte lineage transcription factor 2-positive (OLIG2(+)) cells\"]. Additionally, ASCL1 is also mentioned in the context of inducing OPC fate [doc:24982138 snippet:\"lentiviral overexpression of transcription factors ASCL1, SOX10, and NKX2.2 in NPCs was sufficient to induce Sox10 enhancer activity, OPC mRNA, and protein expression consistent with OPC fate\"].",
         "citations": [
             {
             "doc_id": "19737431",
@@ -79,6 +83,7 @@
     },
     {
         "question": "Is the inactivation of the X chromsome linked to cognition?",
+        "source": "bioasq",
         "generated_answer": "Yes, the inactivation of the X chromosome is linked to cognition [doc:12068376 snippet:\"Of the 20 distinct XLMR disorders, 4 demonstrate a strong association with skewed X inactivation, since all carriers of these mutations demonstrate X-inactivation patterns > or =80:20.\"]. Skewed X inactivation is a common feature of X-linked mental retardation (XLMR) disorders [doc:12068376 snippet:\"Among XLMR carriers, approximately 50% demonstrate markedly skewed X inactivation (i.e., patterns > or =80:20), compared with only approximately 10% of female control subjects (P<.001).\"]. Additionally, the X chromosome contains many genes related to cognitive functions, and abnormalities in X-linked genes can affect various aspects of cognition, including social cognition, language, and visuospatial abilities [doc:27870409 snippet:\"There are relatively specific effects of X-linked genes on social cognition, language, emotional regulation, visuospatial, and numerical skills.\"].",
         "citations": [
             {
@@ -95,6 +100,59 @@
             "doc_id": "27870409",
             "snippet": "There are relatively specific effects of X-linked genes on social cognition, language, emotional regulation, visuospatial, and numerical skills.",
             "full_document": "The X chromosome has played a critical role in the development of sexually selected characteristics for over 300 million years, and during that time it has accumulated a disproportionate number of genes concerned with mental functions. There are relatively specific effects of X-linked genes on social cognition, language, emotional regulation, visuospatial, and numerical skills. Many human X-linked genes outside the X-Y pairing pseudoautosomal regions escape X-inactivation. Dosage differences in the expression of such genes (which constitute at least 15% of the total) are likely to play an important role in male-female neural differentiation, and in cognitive deficits and behavioral characteristics, particularly in the realm of social communication, that are associated with sex chromosome aneuploidies. \u00a9 2016 Wiley Periodicals, Inc."
+            }
+        ]
+    },
+    {
+        "question": "How to mount a power supply?",
+        "source": "expertqa",
+        "generated_answer": " To mount a power supply, first align the PSU in the case so that the four mounting holes align properly [doc:5110337 snippet:\"Align the PSU in the case so that the four mounting holes align properly.\"]. Then, fasten the power supply by holding it in position while screwing it into the case [doc:5110337 snippet:\"Fasten the power supply. Hold the PSU in position while you screw it into the case.\"].",
+        "citations": [
+            {
+                "doc_id": "5110337",
+                "snippet": "Align the PSU in the case so that the four mounting holes align properly.",
+                "full_document": "that retain power after the power supply is turned off. Never open or insert any metal objects into the vents of the power supply, as you risk electrical shock.Align the PSU in the case so that the four mounting holes align properly. Verify that any air-intake fan on the power supply faces toward the center of the case and not toward the case cover.Fasten the power supply. Hold the PSU in position while you screw it into the case.Set the voltage switch. Verify that the voltage switch on the back of the power supply is set to the proper voltage level for your country. North America and Japan use 110/115v. Europe and other \u200bcountries use 220/230v.Plug the power supply into the motherboard. If the computer has the motherboard installed into it, connect the power leads to the motherboard. Most modern motherboards use the large ATX power connector that is plugged into the socket on the motherboard. Some motherboards require an additional amount of power through a four-pin ATX12V"
+            },
+            {
+                "doc_id": "5110337",
+                "snippet": "Fasten the power supply. Hold the PSU in position while you screw it into the case.",
+                "full_document": "that retain power after the power supply is turned off. Never open or insert any metal objects into the vents of the power supply, as you risk electrical shock.Align the PSU in the case so that the four mounting holes align properly. Verify that any air-intake fan on the power supply faces toward the center of the case and not toward the case cover.Fasten the power supply. Hold the PSU in position while you screw it into the case.Set the voltage switch. Verify that the voltage switch on the back of the power supply is set to the proper voltage level for your country. North America and Japan use 110/115v. Europe and other \u200bcountries use 220/230v.Plug the power supply into the motherboard. If the computer has the motherboard installed into it, connect the power leads to the motherboard. Most modern motherboards use the large ATX power connector that is plugged into the socket on the motherboard. Some motherboards require an additional amount of power through a four-pin ATX12V"
+            }
+        ]
+    },
+    {
+        "question": "What are the benefits of decentralization regarding privacy?",
+        "source": "expertqa",
+        "generated_answer": "According to the documents, the benefits of decentralization regarding privacy include [doc:6320705 snippet:\"Decentralized models nicely support what has been called privacy by design. Decentralized systems can provide privacy and user control structurally rather than by agreement.\"]",
+        "citations": [
+            {
+                "doc_id": "6320705",
+                "snippet": "Decentralized models nicely support what has been called privacy by design. Decentralized systems can provide privacy and user control structurally rather than by agreement.",
+                "full_document": "Some Benefits of Decentralized Design and Modeling the authority might be\u2014will likely be\u2014spread out. This is more complicated than simply building a single blog platform running on a standard distributed model, so why do it? I'm very keen on decentralized programming models and PDOs for several reasons that I'll lay out in the following sections. PDOs Support Structural Privacy By Design Decentralized models nicely support what has been called privacy by design. Decentralized systems can provide privacy and user control structurally rather than by agreement. Let's explore this. The personal computer provides a perfect model of how structural privacy by design works."
+            }
+        ]
+    },
+    {
+        "question": "Who has the highest goals in world football?",
+        "source": "asqa",
+        "generated_answer": "According to the documents provided, the highest goal scorer in world football is Bican, with an estimated total of 805 goals [doc:list-of-footballers-with-500-or-more-goals snippet:\" Bican, an Austrian-Czech dual international who played between the 1930s and the 1950s, as the record scorer with an estimated 805 goals,\"]. However, it is noted that FIFA does not officially recognize this record and has not released a formal list of top scorers.",
+        "citations": [
+            {
+                "doc_id": "list-of-footballers-with-500-or-more-goals",
+                "snippet": "Bican, an Austrian-Czech dual international who played between the 1930s and the 1950s, as the record scorer with an estimated 805 goals,",
+                "full_document": "FIFA, the international governing body of football, have never released a list detailing the highest goalscorers and do not keep official records; in 2020, they recognised Bican, an Austrian-Czech dual international who played between the 1930s and the 1950s, as the record scorer with an estimated 805 goals, while CNN, the BBC, France 24, and O Jogo all acknowledge that Bican's tally of 805 includes goals scored for reserve teams and in unofficial international matches."
+            }
+        ]
+    },
+    {
+        "question": "What kind of car was Ramone from Cars?",
+        "source": "asqa",
+        "generated_answer": "Ramone is a 1959 Chevrolet Impala coupé [doc:list-of-cars-characters snippet:\" is a 1959 Chevrolet Impala coupé\"].",
+        "citations": [
+            {
+                "doc_id": "list-of-cars-characters",
+                "snippet": "is a 1959 Chevrolet Impala coupé",
+                "full_document": "Ramone (voiced by Cheech Marin in the films and video game adaptions, Milton James in Cars 3: Driven to Win) is a 1959 Chevrolet Impala coupé Lowrider that owns the Ramone's House of Body Art store, where he paints himself and other cars, including Lightning McQueen later in the film. "
             }
         ]
     }

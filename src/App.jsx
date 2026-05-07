@@ -3,7 +3,7 @@ import './App.css'
 
 // Parse the generated answer to extract segments (text + citation references)
 function parseAnswer(answer, citations) {
-  const citationRegex = /\[doc:(\d+)\s+snippet:"([^"]*?)"\]/g
+  const citationRegex = /\[doc:([^\s\]]+)\s+snippet:"([^"]*?)"\]/g
   const segments = []
   let lastIndex = 0
   let match
@@ -129,24 +129,66 @@ function DocumentViewer({ citation }) {
   )
 }
 
-function EvalButtons({ label, value, onChange }) {
+const scaleLabels = {
+  1: 'No support',
+  2: 'Barely support',
+  3: 'Partial support',
+  4: 'Support (not all points addressed)',
+  5: 'Full support',
+}
+
+const scaleLabelsRelevance = {
+  1: 'Not relevant',
+  2: 'Barely relevant',
+  3: 'Partially relevant',
+  4: 'Mostly relevant',
+  5: 'Fully relevant',
+}
+
+function EvalSlider({ label, value, onChange, labels = scaleLabels }) {
   return (
     <div className="eval-question">
       <p className="eval-label">{label}</p>
-      <div className="button-group">
-        <button
-          className={`eval-btn yes ${value === 'yes' ? 'selected' : ''}`}
-          onClick={() => onChange('yes')}
-        >
-          Yes
-        </button>
-        <button
-          className={`eval-btn no ${value === 'no' ? 'selected' : ''}`}
-          onClick={() => onChange('no')}
-        >
-          No
-        </button>
+      <div className="slider-container">
+        <input
+          type="range"
+          min="1"
+          max="5"
+          value={value || 3}
+          onChange={(e) => onChange(parseInt(e.target.value))}
+          className="eval-slider"
+        />
+        <div className="slider-labels">
+          {[1, 2, 3, 4, 5].map((n) => (
+            <span
+              key={n}
+              className={`slider-label ${value === n ? 'active' : ''}`}
+              onClick={() => onChange(n)}
+            >
+              <span className="label-number">{n}</span>
+              <span className="label-text">{labels[n]}</span>
+            </span>
+          ))}
+        </div>
       </div>
+      {value && (
+        <p className="selected-value">Selected: <strong>{value}</strong> - {labels[value]}</p>
+      )}
+    </div>
+  )
+}
+
+function CommentsBox({ value, onChange }) {
+  return (
+    <div className="eval-question comments-section">
+      <p className="eval-label">Comments (optional)</p>
+      <textarea
+        className="comments-textarea"
+        value={value || ''}
+        onChange={(e) => onChange(e.target.value)}
+        placeholder="Add any notes or comments about this citation..."
+        rows={3}
+      />
     </div>
   )
 }
@@ -161,7 +203,7 @@ export default function App() {
   const [submitError, setSubmitError] = useState('')
 
   useEffect(() => {
-    fetch('/human_evaluation_data.json')
+    fetch(import.meta.env.BASE_URL + 'human_evaluation_data.json')
       .then((r) => r.json())
       .then(setData)
       .catch((e) => console.error('Failed to load data:', e))
@@ -171,6 +213,11 @@ export default function App() {
   const citation = example?.citations[citationIndex]
   const totalCitations = example?.citations.length || 0
   const segments = example ? parseAnswer(example.generated_answer, example.citations) : []
+
+  // Get the statement text for the current citation (the "Blue" text)
+  const currentStatement = segments.find(seg => seg.type === 'statement' && seg.citationIndex === citationIndex)?.content?.trim() || ''
+  // Get the snippet text (the "Yellow" text)
+  const currentSnippet = citation?.snippet || ''
 
   // Response key for current citation
   const responseKey = `${exampleIndex}-${citationIndex}`
@@ -263,6 +310,7 @@ export default function App() {
           docId: cit.doc_id,
           q1_support: r.q1 || null,
           q2_relevance: r.q2 || null,
+          comments: r.comments || '',
         })
       })
     })
@@ -306,6 +354,42 @@ export default function App() {
       setSubmitError('Failed to save to Google Drive. Please try again.')
       console.error('Submit error:', err)
     }
+  }
+
+  const handleDownload = () => {
+    // Format responses for download
+    const formattedResponses = []
+    data.forEach((ex, ei) => {
+      ex.citations.forEach((cit, ci) => {
+        const key = `${ei}-${ci}`
+        const r = responses[key] || {}
+        formattedResponses.push({
+          question: ex.question,
+          citationIndex: ci,
+          docId: cit.doc_id,
+          snippet: cit.snippet,
+          q1_support: r.q1 || null,
+          q2_relevance: r.q2 || null,
+          comments: r.comments || '',
+        })
+      })
+    })
+
+    const payload = {
+      userId: userId.trim() || 'anonymous',
+      timestamp: new Date().toISOString(),
+      responses: formattedResponses,
+    }
+
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement('a')
+    a.href = url
+    a.download = `evaluation_${userId.trim() || 'anonymous'}_${new Date().toISOString().split('T')[0]}.json`
+    document.body.appendChild(a)
+    a.click()
+    document.body.removeChild(a)
+    URL.revokeObjectURL(url)
   }
 
   if (data.length === 0) {
@@ -376,15 +460,21 @@ export default function App() {
 
       <section className="section eval-section">
         <h2>Evaluation</h2>
-        <EvalButtons
-          label={<>1. Does the text in <span style={{backgroundColor: '#bfdbfe', padding: '2px 4px', borderRadius: '3px'}}>Blue</span> support the highlighted statement in the <span style={{backgroundColor: '#fef08a', padding: '2px 4px', borderRadius: '3px'}}>Yellow</span>?</>}
+        <EvalSlider
+          label={<>1. Does "<span style={{backgroundColor: '#fef08a', padding: '2px 4px', borderRadius: '3px'}}>{currentSnippet}</span>" support the statement "<span style={{backgroundColor: '#bfdbfe', padding: '2px 4px', borderRadius: '3px'}}>{currentStatement}</span>"?</>}
           value={currentResponse.q1}
           onChange={(v) => setAnswer('q1', v)}
+          labels={scaleLabels}
         />
-        <EvalButtons
-          label={<>2. Is the text in <span style={{backgroundColor: '#fef08a', padding: '2px 4px', borderRadius: '3px'}}>Yellow</span> related to the text in <span style={{backgroundColor: '#bfdbfe', padding: '2px 4px', borderRadius: '3px'}}>Blue</span>?</>}
+        <EvalSlider
+          label={<>2. Is "<span style={{backgroundColor: '#fef08a', padding: '2px 4px', borderRadius: '3px'}}>{currentSnippet}</span>" relevant to answering the question?</>}
           value={currentResponse.q2}
           onChange={(v) => setAnswer('q2', v)}
+          labels={scaleLabelsRelevance}
+        />
+        <CommentsBox
+          value={currentResponse.comments}
+          onChange={(v) => setAnswer('comments', v)}
         />
       </section>
 
@@ -402,9 +492,14 @@ export default function App() {
             />
           </div>
           {submitError && <p className="error">{submitError}</p>}
-          <button className="submit-btn" onClick={handleSubmit}>
-            Submit Evaluation
+          <div className="submit-buttons">
+          <button className="download-btn" onClick={handleDownload}>
+              Download Responses
           </button>
+            <button className="submit-btn" onClick={handleSubmit}>
+              Submit Evaluation
+            </button>
+          </div>
         </section>
       )}
 

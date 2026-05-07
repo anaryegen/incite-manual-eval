@@ -1,6 +1,7 @@
 [
     {
         "question": "What is the role of the receptor tyrosine kinase AXL in malignancy?",
+        "source": "bioasq",
         "generated_answer": "AXL plays a significant role in malignancy by promoting various cancer-promoting processes such as proliferation, migration, invasion survival, and apoptosis [doc:32148495 snippet:\"AXL is a receptor tyrosinekinase (RTK) that has been implicated in diverse tumor-promoting processes such as proliferation, migration, invasion, survival, and apoptosis \"]. It contributes to the development of resistance to chemotherapy, as evidenced by its involvement in reducing sensitivity of tumor cells to antitumor agents [doc:27048336 snippet:\"Deregulated Axl expression and activation have been shown to be implicated in reduced sensitivity of tumor cells to target-specific and conventional antitumor agents\"]. Additionally, AXL overexpression is linked to poor prognosis in several cancers, including breast cancer, and is associated with aggressive behavior and increased tumor metastatic potential [doc:28072762 snippet:\" In the context of malignancy, evidence suggests that AXL overexpression drives wide-ranging processes, including epithelial to mesenchymal transition, tumour angiogenesis, resistance to chemotherapeutic and targeted agents, and decreased antitumor immune response.\"].",
         "citations": [
             {
@@ -21,6 +22,7 @@
     },
     {
         "question": "Are respiratory measurements correlated with disease severity in Duchenne Muscular Dystrophy?",
+        "source": "bioasq",
         "generated_answer": "Yes, respiratory measurements such as forced vital capacity (FVC), sniff nasal inspiratory pressure (SNIP), gastric pressure during cough (Pgas cough), and diaphragmatic tension-time index (TTdi) are correlated with disease severity in Duchenne Muscular Dystrophy. For instance, FVC shows a consistent decline with age [doc:23836708 snippet:\"Absolute forced vital capacity (FVC) values peaked around the age of 13-14 years and remained mainly over 1 L but predicted values showed a mean 4.1 ± 4.4% decline/year.\"]. SNIP also demonstrates a decline with age [doc:23836708 snippet:\"Sniff nasal inspiratory pressure (SNIP) tended to increase first followed by a rapid decline (mean decrease 4.8 ± 4.9 cmH2 O; 5.2 ± 4.4% predicted/year).\"]. Pgas cough was found to be below normal in all patients and showed a mean decline of 5,7 ± 3,8 cmH2 O/year [doc:23836708 snippet:\"Gastric pressure during cough (Pgas cough) was below normal in all patients with a mean decline of 5.7 ± 3.8 cmH2 O/year.\"].",
         "citations": [
             {
@@ -42,6 +44,7 @@
     },
     {
         "question": "Does the consensus molecular subtype (CMS) classification for colorectal cancer any use in routine clinical practice?",
+        "source": "bioasq",
         "generated_answer": "Yes, the CMS classification has shown promise for clinical application in predicting prognosis and response to systemic therapy, though it is not yet widely implemented in routine clinical practice[doc:34909395 snippet:\"Understanding CMS is a crucial step in personalized medicine, although prospective clinical trials selecting patients by CMS are required to pass proof-of-concept before becoming a routine clinical tool in oncology routine care.\"]",
         "citations": [
             {
@@ -53,6 +56,7 @@
     },
     {
         "question": "What are the lineage transcription factors of oligodendrocyte progenitor cells (OPCs)?",
+        "source": "bioasq",
         "generated_answer": "The lineage transcription factors of oligodendrocyte progenitor cells (OPCs) include NKX2,2 [doc:19737431 snippet:\"the Nkx2.2 transcription factor both limits the number of OPCs that are formed and subsequently promotes their differentiation\"], SOX10 [doc:20229602 snippet:\"the Sox10 transcription factor is required during the differentiation stage to promote myelin gene expression\"], and OLIG2 [doc:26134954 snippet:\"Oligodendrocyte lineage transcription factor 2-positive (OLIG2(+)) cells\"]. Additionally, ASCL1 is also mentioned in the context of inducing OPC fate [doc:24982138 snippet:\"lentiviral overexpression of transcription factors ASCL1, SOX10, and NKX2.2 in NPCs was sufficient to induce Sox10 enhancer activity, OPC mRNA, and protein expression consistent with OPC fate\"].",
         "citations": [
             {
@@ -79,6 +83,7 @@
     },
     {
         "question": "Is the inactivation of the X chromsome linked to cognition?",
+        "source": "bioasq",
         "generated_answer": "Yes, the inactivation of the X chromosome is linked to cognition [doc:12068376 snippet:\"Of the 20 distinct XLMR disorders, 4 demonstrate a strong association with skewed X inactivation, since all carriers of these mutations demonstrate X-inactivation patterns > or =80:20.\"]. Skewed X inactivation is a common feature of X-linked mental retardation (XLMR) disorders [doc:12068376 snippet:\"Among XLMR carriers, approximately 50% demonstrate markedly skewed X inactivation (i.e., patterns > or =80:20), compared with only approximately 10% of female control subjects (P<.001).\"]. Additionally, the X chromosome contains many genes related to cognitive functions, and abnormalities in X-linked genes can affect various aspects of cognition, including social cognition, language, and visuospatial abilities [doc:27870409 snippet:\"There are relatively specific effects of X-linked genes on social cognition, language, emotional regulation, visuospatial, and numerical skills.\"].",
         "citations": [
             {
@@ -100,6 +105,7 @@
     },
     {
         "question": "Is bronchiectasis a chronic or acute condition?",
+        "source": "bioasq",
         "generated_answer": "Bronchiectasis is a chronic condition [doc:32287909 snippet:\"Bronchiectasis not due to cystic fibrosis is the third most common chronic inflammatory disease of the airway\"]. This is supported by multiple sources indicating its long-term nature and management strategies focused on reducing symptoms and preventing exacerbations [doc:29602647 snippet:\"Aggressive management of bronchiectasis is necessary to reduce the daily symptom burden and frequency of exacerbations\"].",
         "citations": [
             {
@@ -116,6 +122,7 @@
     },
     {
         "question": "Are microglia involved in synaptic pruning during development?",
+        "source": "bioasq",
         "generated_answer": "Yes, microglia are involved in synaptic pruning during development[doc:21778362 snippet:\"These findings link microglia surveillance to synaptic maturation and suggest that deficits in microglia function may contribute to synaptic abnormalities seen in some neurodevelopmental disorders.\"]",
         "citations": [
             {
@@ -127,6 +134,7 @@
     },
     {
         "question": "What is the cancer-immunity cycle?",
+        "source": "bioasq",
         "generated_answer": "The cancer-immunity cycle is a framework that describes the series of events necessary for the immune system to recognize and eliminate cancer cells [doc:34610889 snippet:\"The cancer-immunity cycle (CIC) comprises a series of events that are required for immune-mediated control of tumor growth.\"]. It includes processes such as antigen presentation, T cell activation, and immune response generation, with disruptions in any step potentially allowing tumors to evade immune surveillance [doc:27843611 snippet:\"Importantly, dysfunction of a single step may interrupt the entire cycle, thus impairing the immune-mediated control of tumour growth.\"].\n\nAnother part of the cycle involves the migration of immune cells between the tumor and regional lymph nodes, where antigen-presenting cells activate T cells to mount an attack [doc:27843611 snippet:\"Antigen-presenting cells travel to regional lymph nodes, where they present the tumour antigens to naïve T cells in order to initiate a tumour-specific T cell response.\"]. Additionally, the cycle highlights the importance of overcoming immune suppression within the tumor microenvironment to effectively combat cancer [doc:34610889 snippet:\"metabolic reprogramming of tumor and immune cells within the tumor microenvironment (TME) as key contributors to immune evasion.\"].",
         "citations": [
             {
@@ -153,6 +161,7 @@
     },    
     {
         "question": "What is the mechanism of action of Iptacopan?",
+        "source": "bioasq",
         "generated_answer": "Iptacopan is an oral, highly potent proximal complement inhibitor that specifically binds to factor B and inhibits the alternative pathway (AP) [doc:38312795 snippet:\"Iptacopan is an oral, highly potent proximal complement inhibitor that specifically binds to factor B and inhibits the alternative pathway (AP)\"].",
         "citations": [
             {
@@ -164,6 +173,7 @@
     },
     {
         "question": "Do natural killer (NK) cells require antigen presentation to eliminate cancer cells?",
+        "source": "bioasq",
         "generated_answer": "No, natural killer (NK) cells do not require antigen presentation to eliminate cancer cells [doc:20704970 snippet:\"Instead of looking for the presence of tumor cell-specific antigens, the NK cells sense the absence of molecules usually present at the surface of normal cells (the so-called human leukocyte antigen (HLA) class I molecules).\"]. Additionally, this is supported by other sources indicating their non-MHC restricted manner of action [doc:2528695 snippet:\"Natural killer (NK) cells are large granular lymphocytes capable of killing tumour cells in a non-MHC restricted manner.\"].",
         "citations": [
             {
@@ -180,6 +190,7 @@
     },
     {
         "question": "What is the Pringle manuever used for?",
+        "source": "bioasq",
         "generated_answer": "The Pringle maneuver is used to reduce intraoperative blood loss during liver resection by temporarily clamping the portal triad [doc:16036781 snippet:\"Temporary portal triad clamping (Pringle maneuver) during liver resection reduces intraoperative blood loss.\"].\n\nAnother possible answer would be: The Pringle maneuver is used during liver resection to minimize blood loss by clamping the hepatic vessels, thereby allowing for a clearer surgical field [doc:19144472 snippet:\"The Pringle manoeuvre has been commonly used to avoid massive blood loss during operation since its advent\"].",
         "citations": [
             {
@@ -195,7 +206,8 @@
         ]
     },
     {
-        "question": "What is the role of the tumor microenvironment in the MES-like state of glioblastoma multiforme (GBM)?",
+        "question": "What is the role of the tumor microenvironment in the MES-like state of glioblastoma multiforme (GBM)?", 
+        "source": "bioasq",
         "generated_answer": "The tumor microenvironment plays a significant role in the development and maintenance of the MES-like state in GBM [doc:35205179 snippet:\"Tumor microenvironment and therapy can induce a proneural-to-mesenchymal transition, as a mechanism of adaptation and resistance to treatments.\"] This indicates that the tumor microenvironment is a key driver in shaping the MES-like phenotype through complex interactions with GBM cells.",
         "citations": [
             {
@@ -207,6 +219,7 @@
     },
     {
         "question": "What is the role of glioblastoma stem-like cells (GSCs) in tumor progression and therapy resistance?",
+        "source": "bioasq",
         "generated_answer": "Glioblastoma stem-like cells (GSCs) contribute to tumor progression and therapy resistance through several mechanisms. They maintain tumor heterogeneity by recapitulating pathway alterations of different GBM subtypes [doc:37444568 snippet:\"GSCs contribute to tumor heterogeneity and recapitulate pathway alterations described for the three GBM subtypes found in patients.\"]. Additionally, GSCs exhibit high plasticity, enabling them to adapt to therapeutic interventions and reconstitute heterogeneity in recurrent tumors [doc:37444568 snippet:\"This high degree of plasticity permits adaptation to the environmental changes introduced by chemo- and radiation therapy.\"]. Furthermore, GSCs are inherently resistant to standard treatments, employing mechanisms such as enhanced DNA damage repair, MGMT promoter demethylation, autophagy, and immune evasion [doc:37444568 snippet:\"GSCs are also inherently resilient to standard-of-care therapy, and mechanisms of resistance include enhanced DNA damage repair, MGMT promoter demethylation, autophagy, impaired induction of apoptosis, metabolic adaptation, chemoresistance, and immune evasion.\"].",
         "citations": [
             {
@@ -228,6 +241,7 @@
     },
     {
         "question": "Have brain abnormalities been found in people with anxiety?",
+        "source": "bioasq",
         "generated_answer": "Yes, brain abnormalities have been found in people with anxiety. Specifically, individuals with social anxiety disorder (SAD) exhibit aberrant developmental coordination among key regions of the striatum and between the striatum and cortical regions, which is age-dependent [doc:36542201 snippet:\"Adolescents with SAD suffer aberrant developmental coordination among the key regions of the striatum and between the striatum and cortical regions.\"]. Additionally, maternal negative parenting in early adolescence has been linked to atypical amygdala-prefrontal connectivity associated with internalizing depressive symptoms [doc:33097228 snippet:\"Exposure to maternal negative parenting was positively predictive of stronger functional connectivity of the amygdala with the ventrolateral prefrontal cortex.\"].",
         "citations": [
             {
@@ -244,6 +258,7 @@
     },
     {
         "question": "What is the target of Zolbetuximab?",
+        "source": "bioasq",
         "generated_answer": "Zolbetuximab is a first-in-class chimeric immunoglobulin G1 monoclonal antibody that targets Claudin-18,2 [doc:38188462 snippet:\"Zolbetuximab was developed which is a first-in-class chimeric immunoglobulin G1 monoclonal antibody highly specific for CLDN18.2.\"].",
         "citations": [
             {
@@ -255,6 +270,7 @@
     },
     {
         "question": "Are physicians at higher risk of suicide than the general population?",
+        "source": "bioasq",
         "generated_answer": "Yes, physicians are at a higher risk of suicide than the general population [doc:35183987 snippet:\"It is confirmed that physicians have a significantly higher suicide rate (average of 1.3%) than the general population (average of 0.8%) (p = 0.003).\"].",
         "citations": [
             {
@@ -266,6 +282,7 @@
     },
     {
         "question": "Are biologicals safe during pregnancy?",
+        "source": "bioasq",
         "generated_answer": " Yes, based on studies, biologicals appear to be safe during pregnancy. For instance, a systematic review and meta-analysis found that exposure to biologics for psoriasis during pregnancy and/or conception did not increase the risk of miscarriage/abortion or congenital malformations, showing similar rates to the general population [doc:37262303 snippet:\"Altogether, exposure to biologics for psoriasis during pregnancy and/or conception does not seem to be associated with an increased risk of miscarriage/abortion or congenital malformations, showing similar rates to the general population.\"]. Additionally, another study concluded that the use of bDMARDs was effective in disease control and safe from a maternal-fetal point of view, with no increase in prematurity, SGA, malformations, or infections [doc:39141986 snippet:\"The use of bDMARDs was effective in disease control and safe from a maternal-fetal point of view, with no increase in prematurity, SGA, malformations, or infections.\"].",
         "citations": [
             {
@@ -282,6 +299,7 @@
     },
     {
         "question": "What is an E-box and what is its role in gene regulation of cancer?",
+        "source": "bioasq",
         "generated_answer": " An E-box is a conserved DNA sequence motif typically recognized by basic helix-loop-helix (bHLH) transcription factors, such as MyoD and Twist. It plays a crucial role in regulating gene expression by facilitating the binding of these transcription factors to the DNA, thereby influencing the transcription of downstream target genes. In the context of cancer, E-boxes are involved in various processes, including cell cycle regulation, differentiation, and epithelial-mesenchymal transition (EMT). For instance, the zinc finger E-box binding homeobox 1 (ZEB1) protein binds to E-box sequences and promotes the transcription of genes associated with EMT, contributing to cancer cell invasiveness and metastasis [doc:38954708 snippet:\"Mechanism studies have shown that the oncogenic effect of ESM1 is realized through the ZEB1/PI3K/AKT pathway.\"]. Additionally, other E-box-binding proteins may regulate the expression of genes that drive tumor progression and resistance to therapy [doc:37444568 snippet:\"GSCs show a high degree of plasticity, allowing for interconversion between different molecular GBM subtypes, with distinct proliferative potential, and different degrees of self-renewal and differentiation.\"].",
         "citations": [
             {
@@ -298,6 +316,7 @@
     },
     {
         "question": "What is ophthalmologic loa-loa?",
+        "source": "bioasq",
         "generated_answer": "Ophthalmologic Loa-loa refers to a condition where the parasite Loa loa, also known as the African eye worm, infects the eye, leading to symptoms such as a foreign body sensation, redness, and the presence of a visible worm in the conjunctival space [doc:23698214 snippet:\"Slit-lamp examination revealed, in the infero-temporal subconjunctival space, the presence of a live whitish worm that moved slowly in the thickness of the tissues.\"]. It is characterized by the migration of the worm through the ocular tissues, which can cause discomfort and require surgical removal in some cases [doc:23698214 snippet:\"The worm was surgically removed under topical anesthesia\"]. Additionally, the infection may present with systemic signs like eosinophilia [doc:23698214 snippet:\"laboratory test showed peripheral blood eosinophilia\"]. The condition is more prevalent in regions of western and central Africa where the vector, the deer fly, is found [doc:23698214 snippet:\"Filariasis or Loiasis is an eye infection caused by a parasite belonging to the species Loa loa, also known as \"African eye worm\" since it is present in the rainforests belt of western and central Africa.\"].",
         "citations": [
             {
@@ -321,9 +340,60 @@
             "full_document": "Filariasis or Loiasis is an eye infection caused by a parasite belonging to the species Loa loa, also known as \"African eye worm\" since it is present in the rainforests belt of western and central Africa. The purpose of this study is the description of a clinical case presented to our department. A 40-years-old Congolese woman, in the third month of pregnancy, complained a foreign body sensation in the right eye for which she was submitted to complete ophthalmologic examination. Slit-lamp examination revealed, in the infero-temporal subconjunctival space, the presence of a live whitish worm that moved slowly in the thickness of the tissues. Place a clinical suspicion of subconjunctival filariasis, were performed parasitological and serological analysis; laboratory test showed peripheral blood eosinophilia and the blood film examination was negative for the presence of circulating microfilariae. The worm was surgically removed under topical anesthesia and the histological examinations of the parasite confirmed that it was an adult male worm belonging to the species Loa loa. Due to the large increase of migratory flows to Europe, number of reports of loiasis is becoming more frequent; the knowledge of this emerging pathogens is essential for diagnosis and treatment planning."
             }
         ]
+    },
+    {
+        "question": "How to mount a power supply?",
+        "source": "expertqa",
+        "generated_answer": " To mount a power supply, first align the PSU in the case so that the four mounting holes align properly [doc:5110337 snippet:\"Align the PSU in the case so that the four mounting holes align properly.\"]. Then, fasten the power supply by holding it in position while screwing it into the case [doc:5110337 snippet:\"Fasten the power supply. Hold the PSU in position while you screw it into the case.\"].",
+        "citations": [
+            {
+                "doc_id": "5110337",
+                "snippet": "Align the PSU in the case so that the four mounting holes align properly.",
+                "full_document": "that retain power after the power supply is turned off. Never open or insert any metal objects into the vents of the power supply, as you risk electrical shock.Align the PSU in the case so that the four mounting holes align properly. Verify that any air-intake fan on the power supply faces toward the center of the case and not toward the case cover.Fasten the power supply. Hold the PSU in position while you screw it into the case.Set the voltage switch. Verify that the voltage switch on the back of the power supply is set to the proper voltage level for your country. North America and Japan use 110/115v. Europe and other \u200bcountries use 220/230v.Plug the power supply into the motherboard. If the computer has the motherboard installed into it, connect the power leads to the motherboard. Most modern motherboards use the large ATX power connector that is plugged into the socket on the motherboard. Some motherboards require an additional amount of power through a four-pin ATX12V"
+            },
+            {
+                "doc_id": "5110337",
+                "snippet": "Fasten the power supply. Hold the PSU in position while you screw it into the case.",
+                "full_document": "that retain power after the power supply is turned off. Never open or insert any metal objects into the vents of the power supply, as you risk electrical shock.Align the PSU in the case so that the four mounting holes align properly. Verify that any air-intake fan on the power supply faces toward the center of the case and not toward the case cover.Fasten the power supply. Hold the PSU in position while you screw it into the case.Set the voltage switch. Verify that the voltage switch on the back of the power supply is set to the proper voltage level for your country. North America and Japan use 110/115v. Europe and other \u200bcountries use 220/230v.Plug the power supply into the motherboard. If the computer has the motherboard installed into it, connect the power leads to the motherboard. Most modern motherboards use the large ATX power connector that is plugged into the socket on the motherboard. Some motherboards require an additional amount of power through a four-pin ATX12V"
+            }
+        ]
+    },
+    {
+        "question": "What are the benefits of decentralization regarding privacy?",
+        "source": "expertqa",
+        "generated_answer": "According to the documents, the benefits of decentralization regarding privacy include [doc:6320705 snippet:\"Decentralized models nicely support what has been called privacy by design. Decentralized systems can provide privacy and user control structurally rather than by agreement.\"]",
+        "citations": [
+            {
+                "doc_id": "6320705",
+                "snippet": "Decentralized models nicely support what has been called privacy by design. Decentralized systems can provide privacy and user control structurally rather than by agreement.",
+                "full_document": "Some Benefits of Decentralized Design and Modeling the authority might be\u2014will likely be\u2014spread out. This is more complicated than simply building a single blog platform running on a standard distributed model, so why do it? I'm very keen on decentralized programming models and PDOs for several reasons that I'll lay out in the following sections. PDOs Support Structural Privacy By Design Decentralized models nicely support what has been called privacy by design. Decentralized systems can provide privacy and user control structurally rather than by agreement. Let's explore this. The personal computer provides a perfect model of how structural privacy by design works."
+            }
+        ]
+    },
+    {
+        "question": "Who has the highest goals in world football?",
+        "source": "asqa",
+        "generated_answer": "According to the documents provided, the highest goal scorer in world football is Bican, with an estimated total of 805 goals [doc:list-of-footballers-with-500-or-more-goals snippet:\" Bican, an Austrian-Czech dual international who played between the 1930s and the 1950s, as the record scorer with an estimated 805 goals,\"]. However, it is noted that FIFA does not officially recognize this record and has not released a formal list of top scorers.",
+        "citations": [
+            {
+                "doc_id": "list-of-footballers-with-500-or-more-goals",
+                "snippet": "Bican, an Austrian-Czech dual international who played between the 1930s and the 1950s, as the record scorer with an estimated 805 goals,",
+                "full_document": "FIFA, the international governing body of football, have never released a list detailing the highest goalscorers and do not keep official records; in 2020, they recognised Bican, an Austrian-Czech dual international who played between the 1930s and the 1950s, as the record scorer with an estimated 805 goals, while CNN, the BBC, France 24, and O Jogo all acknowledge that Bican's tally of 805 includes goals scored for reserve teams and in unofficial international matches."
+            }
+        ]
+    },
+    {
+        "question": "What kind of car was Ramone from Cars?",
+        "source": "asqa",
+        "generated_answer": "Ramone is a 1959 Chevrolet Impala coupé [doc:list-of-cars-characters snippet:\" is a 1959 Chevrolet Impala coupé\"].",
+        "citations": [
+            {
+                "doc_id": "list-of-cars-characters",
+                "snippet": "is a 1959 Chevrolet Impala coupé",
+                "full_document": "Ramone (voiced by Cheech Marin in the films and video game adaptions, Milton James in Cars 3: Driven to Win) is a 1959 Chevrolet Impala coupé Lowrider that owns the Ramone's House of Body Art store, where he paints himself and other cars, including Lightning McQueen later in the film. "
+            }
+        ]
     }
     
-    
-    
-    
 ]
+
