@@ -391,6 +391,35 @@
   background: #f8fafc;
 }
 
+.submit-section.complete {
+  border-color: #22c55e;
+  background: #f0fdf4;
+}
+
+.submit-section.partial {
+  border-color: #f59e0b;
+  background: #fffbeb;
+}
+
+.save-progress-info {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 16px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+}
+
+.submit-section.complete .save-progress-info {
+  color: #166534;
+  background: rgba(220, 252, 231, 0.5);
+}
+
+.submit-section.partial .save-progress-info {
+  color: #92400e;
+  background: rgba(254, 243, 199, 0.5);
+}
+
 .user-id-input {
   margin-bottom: 16px;
 }

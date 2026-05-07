@@ -385,7 +385,8 @@ export default function App() {
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
     a.href = url
-    a.download = `evaluation_${userId.trim() || 'anonymous'}_${new Date().toISOString().split('T')[0]}.json`
+    const status = completedEvals === totalEvals ? 'complete' : `partial_${completedEvals}of${totalEvals}`
+    a.download = `evaluation_${userId.trim() || 'anonymous'}_${status}_${new Date().toISOString().split('T')[0]}.json`
     document.body.appendChild(a)
     a.click()
     document.body.removeChild(a)
@@ -478,30 +479,34 @@ export default function App() {
         />
       </section>
 
-      {allComplete && (
-        <section className="section submit-section">
-          <h2>Submit Your Evaluation</h2>
-          <div className="user-id-input">
-            <label htmlFor="userId">Enter your User ID:</label>
-            <input
-              id="userId"
-              type="text"
-              value={userId}
-              onChange={(e) => setUserId(e.target.value)}
-              placeholder="e.g. reviewer_01"
-            />
-          </div>
-          {submitError && <p className="error">{submitError}</p>}
-          <div className="submit-buttons">
+      <section className={`section submit-section ${allComplete ? 'complete' : 'partial'}`}>
+        <h2>{allComplete ? 'Submit Your Evaluation' : 'Save Progress'}</h2>
+        <p className="save-progress-info">
+          {allComplete
+            ? `All ${totalEvals} citations evaluated. Ready to submit!`
+            : `${completedEvals} of ${totalEvals} citations evaluated. You can save your progress at any time.`
+          }
+        </p>
+        <div className="user-id-input">
+          <label htmlFor="userId">Enter your User ID:</label>
+          <input
+            id="userId"
+            type="text"
+            value={userId}
+            onChange={(e) => setUserId(e.target.value)}
+            placeholder="e.g. reviewer_01"
+          />
+        </div>
+        {submitError && <p className="error">{submitError}</p>}
+        <div className="submit-buttons">
           <button className="download-btn" onClick={handleDownload}>
-              Download Responses
+            {allComplete ? 'Download Responses' : `Download Progress (${completedEvals}/${totalEvals})`}
           </button>
-            <button className="submit-btn" onClick={handleSubmit}>
-              Submit Evaluation
-            </button>
-          </div>
-        </section>
-      )}
+          <button className="submit-btn" onClick={handleSubmit}>
+            {allComplete ? 'Submit Evaluation' : `Submit Progress (${completedEvals}/${totalEvals})`}
+          </button>
+        </div>
+      </section>
 
       <footer className="footer">
         <p>Keyboard shortcuts: <kbd>Y</kbd> Yes &middot; <kbd>N</kbd> No &middot; <kbd>&larr;</kbd> <kbd>&rarr;</kbd> Navigate</p>
